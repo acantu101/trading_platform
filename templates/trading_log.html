@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trading Log</title>
+</head>
+<body>
+    <h1>Trading Log</h1>
+    <table border="1">
+        <tr>
+            <th>Symbol</th>
+            <th>Decision</th>
+            <th>Timestamp</th>
+        </tr>
+        {% for entry in trading_log %}
+        <tr>
+            <td>{{ entry.symbol }}</td>
+            <td>{{ entry.decision }}</td>
+            <td>{{ entry.timestamp }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+</body>
+</html>
