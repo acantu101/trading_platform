@@ -22,7 +22,7 @@ This trading pipeline consists of four main components: **Market Data App**, **F
 ## Setup Instructions:
 1. Install the required Python libraries:
    
-pip install requests pandas statsmodels Flask Flask-MySQLdb mysql-connector-python
+```pip install requests pandas statsmodels Flask Flask-MySQLdb mysql-connector-python```
 
 code
 
